@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            /* background: #000000bd; */
+            padding: 0;
+            overflow-x: hidden;
+
+        }
+        body{
+            background: wheat;
+        }
+
+        .header {
+            background: url(images/1.jpeg);
+            height: 400px;
+            width: 100%;
+            color: white;
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: difference;
+            background-color: #000000ad;
+        }
+
+        .header h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            padding-top: 70px;
+        }
+
+        .header h2 {
+            font-size: 30px;
+            padding-top: 25px;
+        }
+
+        .nav {
+            background: black;
+            width: 100%;
+            text-align: center;
+            height: 60px;
+
+        }
+
+
+        .nav ul {
+
+            color: white;
+            /* float: right; */
+            padding-top: 20px;
+        }
+
+        .nav li {
+            color: white;
+            text-align: center;
+            display: inline;
+            padding-right: 60px;
+            padding-left: 60px;
+
+        }
+
+        /* a:link {
+            color: white !important;
+            width: 125px;
+            text-decoration: none;
+            text-align: center;
+            padding: 20px;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-family: verdana;
+        } */
+
+        .nav li a:hover {
+            background-color: white;
+            width: 40px;
+            padding-top: 1px;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 1px;
+            color: black;
+
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            background: black;
+
+        }
+
+        .abt {
+            /* border: 2px solid blue; */
+            color: black;
+        }
+
+        .abt div.img {
+            /* margin: 5px; */
+            /* border: 1px solid #ccc;
+             */
+            border: none;
+            float: left;
+            width: 500px;
+            clear: both;
+        }
+
+        .abt div.desc center ol {
+            color: black;
+        }
+
+        .abt .desc ol li {
+            padding: 5px;
+        }
+
+        .abt div.img img {
+            width: 100%;
+            /* height: auto; */
+            height: 500px;
+            padding: 20px;
+            margin-left: 60px;
+        }
+
+        .abt div.desc {
+
+            text-align: left;
+            float: right;
+            border: 4px solid black;
+            margin-right: 40px;
+            margin-top: 20px;
+            height: 500px;
+            width: 50%;
+            color: black;
+            /* color: white; */
+            /* background: black; */
+
+        }
+        section{
+            background: white;
+        }
+
+
+
+main{
+    /* background: blanchedalmond; */
+    height: 800px;
+}
+
+       main .box {
+            border: solid white;
+            font-family: sans-serif;
+            position: absolute;
+            top: 200%;
+            left: 34%;
+            width: 450px;
+            background: white;
+            padding: 40px;
+            box-sizing: border-box;
+            border-bottom-right-radius: 12px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+
+        }
+
+       main .box h2 {
+            color: purple;
+            margin: 0 0 5px;
+            padding: 0;
+            text-align: center;
+
+        }
+
+      main  .box form p {
+            /* margin-top:15px; */
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+       main .box .inputbox input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            margin-bottom: 30px;
+            border: none;
+            /* border: solid 1px; */
+
+
+        }
+
+       main .box form .inputbox input {
+            margin-top: 5px;
+            padding-left: 10px;
+            background: whitesmoke;
+        }
+
+       main .box .inputbox .inj {
+            /* margin-top: 20px; */
+            padding-left: 10px;
+
+        }
+
+       main .box .inputbox .inp {
+            border: solid;
+            background: purple;
+            border-bottom-right-radius: 12px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            color: white;
+            font-size: 18px;
+            /* font-family: fantasy; */
+            font-weight: 530;
+            padding: 13px;
+            margin-top: 2px;
+        }
+      main .box .inputbox .w3-select{
+              width: 362px;
+              height: 34px;
+              background: whitesmoke;
+              border:none;
+              padding: 10px;
+              margin-top: 5px;
+        }
+      main  center h1{
+            padding-top: 27px;
+            color: white;
+        
+        }
+    </style>
+
+    <div class="header">
+        <!-- <img src="images/wind saved.jpg" alt="" width="100%" height="550px"> -->
+        <center>
+            <h1>Hello Everyone </h1>
+            <h2>Welcome To My Profile Website<br>I AM MITCHELL</h2>
+        </center>
+    </div>
+
+    <div class="nav">
+        <ul style="color: white !important">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#main">ABOUT ME</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+    </div>
+
+    <section>
+        <center>
+            <h1 style="padding: 20px; padding-top: 100px;">
+                ABOUT ME
+            </h1>
+        </center>
+
+        <div class="abt">
+            <div class="img">
+                <img src="images/ME.jpg" alt="" width="500" height="300">
+            </div>
+
+            <div class="desc" style="color: black;">
+                <!-- <center>  -->
+                <ol style="display: block; padding: 20px;">
+                    <li style="color: black;display:block; text-align: left;">
+                        <h4>NAME:</h4> MITCHELL NSIKAK
+                    </li>
+                    <li style="color: black; display: block; text-align: left;">
+                        <h4>STATE OF ORIGIN:</h4> AKWA IBOM
+                    </li>
+                    <li style="color: black; display: block; text-align: left;">
+                        <h4>DATE OF BIRTH:</h4> 30/08/1999
+                    </li>
+                    <li style="color: black;display: block; text-align: left;">
+                        <h4>ADDRESS: </h4>BLOCK 3 KING APKASOM AVENUE OFF VISION ROAD NSUKKARA,UYO AKWA IBOM STATE
+                    </li>
+                    <li style="color: black;display: block; text-align: left;">
+                        <h4>OCCUPATION: </h4>STUDENT
+                    </li>
+                    <li style="color: black;display: block; text-align: left;">
+                        <h4>HOME TOWN:</h4> UYO
+                    </li>
+                    <li style="color: black;display: block; text-align: left;">
+                        <h4>SLACK ID:</h4> MITCHELL
+                    </li>
+                    <li style="color: black;display: block; text-align: center;">
+                        <h4>MY BIO</h4> I am a young Nigerian with a goal set towards towards the sector of technology,
+                        i also have interest in fashion and design.Tho my dream is to become a marine engineer, i still
+                        know i can create one the greatest applications widely used in the world. My hobbies are
+                        drumming, swimming, researching and interacting.
+                    </li>
+                </ol>
+                <!-- </center>  -->
+            </div>
+        </div>
+
+    </section>
+    <main style="background:black;">
+            <center>
+                <h1>
+                    CONTACT
+                </h1>
+            </center>
+                        <div class="box">
+                            
+                            <form>
+                                <h2>CONTACT ME</h2>
+                               <p>kindly drop your message</p>                    
+                                <div class="inputbox">
+                                    <label><b>Full Name</b></label>
+                                    <input type="text" name="" required="" placeholder="Full Name" class="inj">
+                                </div>
+                                <div class="inputbox">
+                                    <label><b>Email Address</b></label>
+                                    <input type="email" name="" required="" placeholder="Email Address">
+                                </div>
+                                <div class="inputbox">
+                                    <label><b>Message</b></label>
+                                    <input type="text" name="" required="" placeholder="Message" style="height: 100px;">
+                                </div>
+                                <!-- <div class="inputbox">
+                                    <label> <b>Password</b></label>
+                                    <input type="text" name="" required="" placeholder="Password">
+                                </div>
+                                <div class="inputbox">
+                                    <label><b>Referrer Phone or Promo Code(Optional)</b></label>
+                                    <input type="tex" name="" required="" placeholder="Referrer Phone or Promo Code">
+                                </div>
+                                <div class="inputbox">
+                                   <label><b>How Did Your Hear About Us? (Optional)</b></label>
+                                   <select class="w3-select" name="option" >
+                                        <option value="" disabled selected ><p>Click To Select</p></option>
+                                        <option value="1">Facebook</option>
+                                        <option value="2">Twitter</option>
+                                        <option value="3">Instagram</option>
+                                        <option value="1">Freind/Family/Coworker Referral</option>
+                                        <option value="2">Google search</option>
+                                        <option value="3">Google playstore</option>
+                                        <option value="2">Oline Blog</option>
+                                        <option value="3">Local Newspaper</option>
+                                        <option value="2">At an event</option>
+                                        <option value="3">Other</option>
+                                      </select>
+                                      
+                                   
+                                   
+                                </div> -->
+                                <div class="inputbox">
+                                    <input type="submit" value="SEND" class="inp">
+                                </div>
+                            </form>
+                        </div>
+                      
+                        
+    </main>
+
+
+
+</body>
+
+</html>
